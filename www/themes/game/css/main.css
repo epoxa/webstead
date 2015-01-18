@@ -1,0 +1,61 @@
+* {
+  font-family: tahoma,arial,verdana,Lucida Sans,sans-serif;
+  outline: medium none !important;
+  font-size: small;
+}
+
+.container {
+  box-shadow: none;
+  min-height: 360px;
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 8px 0 7px;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+div#blind {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2147483647;
+  cursor: progress;
+  background: url("/themes/main/img/wait.gif") 0 0 no-repeat;
+}
+
+a {
+  text-decoration: none!important;
+}
+
+div.menu {
+    position: fixed;
+    display: block;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    top: 10px;
+    right: 10px;
+}
+
+div.menu a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-indent: -999px;
+    background: url("../img/menu.png");
+}
+
+div.menu a:hover {
+    background: url("../img/menu2.png");
+}
+
+div.menu a.active {
+    background: url("../img/menu2.png");
+}
+
+div.menu a.active:hover {
+    background: url("../img/menu.png");
+}

@@ -1,0 +1,142 @@
+.main {
+  background: #FEE2B6 url("../img/page.jpg") repeat-y;
+  padding: 50px;
+  padding-top: 20px;
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 500px;
+  min-height: 400px;
+  overflow-y: visible;
+  border-radius: 7px;
+  /*cursor: url(../cur/hand.png) 8 4, default;*/
+}
+
+.main p.para-separa {
+  font-size: 0;
+}
+
+a, a:hover {
+  color: #B02C00;
+  text-decoration: none;
+}
+
+.scene a, .inventory a {
+  /*cursor: url(../cur/finger.png) 8 1, pointer;*/
+}
+
+.head a div.image img {
+  /*cursor: url(../cur/hand.png) 8 4, default;*/
+}
+
+.ways a {
+  /*cursor: url(../cur/point.png) 27 10, pointer;*/
+}
+
+.head {
+  text-align: center;
+}
+
+.head h1 {
+  margin-bottom: 20px;
+}
+
+.head h1 a {
+  /*cursor: url(../cur/view.png) 8 8, pointer;*/
+  font-size: inherit;
+  font-weight: bolder;
+  color: #B02C00;
+}
+
+.head {
+  text-align: center;
+  position: relative;
+}
+
+.image {
+  position: relative;
+  display: inline-block;
+}
+
+.image .main-image {
+  height: 200px;
+  border: none;
+}
+
+.sprite {
+  position: absolute;
+}
+
+.ways {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main p {
+  text-align: justify;
+  margin: 5px 0;
+  line-height: 130%;
+  text-indent: 1em;
+}
+
+.inventory {
+  color: black;
+  float: left;
+  left: 5px;
+  top: 0;
+  margin: 10px;
+  padding: 0;
+  line-height: 150%;
+}
+
+.inventory a {
+  display: inline-block;
+  padding: 0 4px 1px 4px;
+  border: 1px solid transparent;
+  border-radius: 11px;
+  text-decoration: none;
+}
+
+.inventory a:hover {
+  background-color: #FCE6BF;
+  border: 1px solid #B02C00;
+  text-decoration: none;
+}
+
+.scene {
+  text-align: justify;
+  overflow-y: auto;
+}
+
+/* Трансляция нестандартных тегов, получаемых из движка */
+
+span.u {
+  text-decoration: underline;
+}
+
+div.c {
+  text-align: center;
+}
+
+/* Для drag-and-drop */
+
+.dragging {
+  background-color: #FCE6BF;
+  border: 1px solid #B02C00!important;
+  box-shadow: 3px 3px 3px #770000;
+}
+
+.highlight {
+  background-color: #ffffff!important;
+}
+
+/* Для ущербного режима кликами (без drag-and-drop) */
+
+.main.use-mode, .main.use-mode *, .inventory.use-mode, .inventory.use-mode * {
+  /*cursor: url(../cur/fist-yellow.png) 11 3, no-drop!important;*/
+}
+
+.main.use-mode .scene a,  .inventory.use-mode a {
+  /*cursor: url(../cur/finger-yellow.png) 8 1, copy!important;*/
+}
+
